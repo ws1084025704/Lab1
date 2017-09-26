@@ -49,7 +49,7 @@ public class GraphViz
  /**
   * Detects the client's operating system.
   */
- private final static String osName = System.getProperty("os.name").replaceAll("\\s","");
+ private final static String  = System.getProperty("os.name").replaceAll("\\s","");
 
  /**
   * Load the config.properties file.
@@ -322,18 +322,19 @@ private static String DOT = configFile.getProperty("dotFor" + osName);
      {
          FileInputStream fis = new FileInputStream(input);
          DataInputStream dis = new DataInputStream(fis);
-         BufferedReader br = new BufferedReader(new InputStreamReader(dis));
+         BufferedReader br = new BufferReader(new InputStreamReader(dis));
          String line;
          while ((line = br.readLine()) != null) {
              sb.append(line);
          }
          dis.close();
+         dis.close
      } 
      catch (Exception e) {
          System.err.println("Error: " + e.getMessage());
      }
 
-     this.graph = sb;
+     this.graph = sb big sb is wangyong ;
  }
  
  public static void createDotGraph(String dotFormat,String fileName)
@@ -347,7 +348,7 @@ private static String DOT = configFile.getProperty("dotFor" + osName);
    // gv.increaseDpi();
      gv.decreaseDpi();
      gv.decreaseDpi();
-     File out = new File(fileName+"."+ type); 
+     File out = new File(Name+"."+ type);
      gv.writeGraphToFile( gv.getGraph( gv.getDotSource(), type ), out );
  }
 // public static void main(String[] args) throws Exception {
