@@ -1,2 +1,9 @@
-在Github网站以web页面的方式查看你的Lab1仓库的当前状态
-modify file 1 one C4
+手工对Lab1的若干文件进行修改
+
+<<<<<<< HEAD
+modify on B1
+=======
+modify on C4
+>>>>>>> C4
+
+modify on B2
