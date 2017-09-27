@@ -5,5 +5,8 @@ modify on B1
 =======
 modify on C4
 >>>>>>> C4
+<<<<<<< HEAD
 
 modify on B2
+=======
+>>>>>>> B1

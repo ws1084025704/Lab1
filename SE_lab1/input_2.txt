@@ -1,6 +1,14 @@
 To explore strange new worlds,
 To seek out new life and new civilizations
 Wang Yong
+<<<<<<< HEAD
 modify file 2 one C4
 
 modify on B2
+=======
+<<<<<<< HEAD
+modify on B1
+=======
+modify on C4
+>>>>>>> C4
+>>>>>>> B1
