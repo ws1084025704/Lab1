@@ -1,3 +1,7 @@
 手工对Lab1的若干文件进行修改
 
+<<<<<<< HEAD
 modify on B1
+=======
+modify on C4
+>>>>>>> C4
