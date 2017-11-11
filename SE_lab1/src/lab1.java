@@ -3,7 +3,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Stack;
 
-import javax.swing.plaf.synth.SynthSpinnerUI;
 //B1!!!!
 import java.util.Scanner;
 import java.util.Set;
@@ -221,25 +220,19 @@ public class lab1 {
 	}
 
 	String queryBridgeWords(Graph G, String word1, String word2) {
+		Stack<String> stack=new Stack<String>(); 
 		if (!G.vexs.containsKey(word1) || !G.vexs.containsKey(word2))
 			return "No word1 or word2 in the graph!";
 		Vex v1 = G.vexs.get(word1);
-		String words = "", pre = "", now = "";
 		for (Map.Entry<String, Integer> m : v1.adjEdges.entrySet()) {
 			Vex v3 = G.vexs.get(m.getKey());
-			if (v3.adjEdges.containsKey(word2)) {
-				pre = now;
-				now = m.getKey();
-				if (!pre.equals(""))
-					words += pre + ", ";
-			}
-		}
-		if (words.equals("") && now.equals(""))
-			return "No bridge words from \"" + word1 + "\" to \"" + word2 + "\"!";
-		else if (words.equals(""))
-			return "The bridge words from \"" + word1 + "\" to \"" + word2 + "\" is: " + now;
-		else
-			return "The bridge words from \"" + word1 + "\" to \"" + word2 + "\" are: " + words + "and " + now;
+			if (v3.adjEdges.containsKey(word2))
+				stack.push(m.getKey());
+		}	
+		String words="";
+		while(!stack.isEmpty())
+			words+=stack.pop()+" ";
+		return words;
 	}
 
 	String generateNewText(Graph G, String inputText) {

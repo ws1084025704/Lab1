@@ -35,6 +35,7 @@ class StringPair{
 		this.s1=s1;
 		this.s2=s2;
 	}
+	@Override
 	public boolean equals(Object obj){
 		if(this==obj)
 			return true;
@@ -47,6 +48,7 @@ class StringPair{
 			return false;
 		return true;
 	}
+	@Override
 	public int hashCode(){
 		return 1;
 	}
