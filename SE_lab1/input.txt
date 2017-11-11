@@ -1,9 +1,2 @@
-手工对Lab1的若干文件进行修改
-
-<<<<<<< HEAD
-modify on B1
-=======
-modify on C4
->>>>>>> C4
-
-modify on B2
+To explore strange new worlds,
+To seek out new life and new civilizations and
