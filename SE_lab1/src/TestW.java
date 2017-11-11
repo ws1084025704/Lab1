@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-public class TestA {
+public class TestW {
 	lab1 test=new lab1();
 	Graph graph=test.createDirectedGraph("input.txt");
 	@Test
